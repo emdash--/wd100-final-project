@@ -61,7 +61,32 @@ nav ul li {
 
 }
 
+.breakfast {
+	background-color: blue;
+	display: none;
+}
+
 #breakfast {
-	
+	display:none;
+}
+
+.snack {
+	display: none;
+	background-color: green;
+}
+
+.meal {
+	display: none;
+	background-color: yellow;
+}
+
+
+
+.remove {
+	display: none;
+}
+
+.show {
+	display: inline-block;
 }
 
