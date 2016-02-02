@@ -1,15 +1,35 @@
+
 body {
 	font-family: sans-serif;
+	background-color: #e6e6e6;
+	margin: 0px;
+	font-size: 1em;
 }
 
 nav {
-	padding: 5px;
+	padding: 10px 10px 10px 5%;
 	display: inline-block;
-
+	background-color: #FFC107;
+	width: 100%;
 }
 
 nav h1 {
 	margin: 0;
+	color: #ffffff;
+}
+
+nav p {
+    color: #FFECB3;
+}
+
+nav a {
+    color: #EE6352;
+    text-decoration: none;
+}
+
+nav a:visited {
+	color: #EE6352;
+    text-decoration: none;
 }
 
 nav ul {
@@ -22,6 +42,8 @@ nav ul li {
 	float: left;
 	text-decoration: none;
 	padding: 5px 20px 5px 0px;
+	color: #EE6352;
+	font-weight: bold;
 }
 
 #subnav {
@@ -31,6 +53,16 @@ nav ul li {
 .container {
 	width: 90%;
 	margin: 0 auto;
+}
+
+#welcome {
+	background-color: rgba(255, 255, 255, 0.5);
+	line-height: 20px;
+	height: 180px;
+	width: 320px;
+	margin: 20px auto;
+	border: 5px solid white;
+	padding: 20px;
 }
 
 .recipe {
@@ -50,9 +82,33 @@ nav ul li {
 	margin-bottom: 5px;
 }
 
+.full-recipe {
+	box-sizing: content-box;
+	display: inline-block;
+	width: 280px;
+	margin: 10px 10px 10px 0px;
+	padding: 10px;
+}
+
+.full-recipe img {
+	width: 280px;
+	height: 180px;
+	text-align: center;
+	margin-bottom: 5px;px 10px 0px;
+}
+
 .recipe h3 {
 	margin: 5px 0px;
-	color:blue;
+	color: #4d4d4d;
+}
+
+.recipe p {
+	margin-top: 0px;
+}
+
+.recipe a {
+	color: #EE6352;
+	font-weight: bold;
 }
 
 .category {
@@ -60,13 +116,8 @@ nav ul li {
 	display: inline;
 }
 
-.recipe p {
-	display: inline;
-
-}
-
 .breakfast {
-	background-color: blue;
+	background-color: #FFFACD;
 	display: none;
 }
 
@@ -76,15 +127,13 @@ nav ul li {
 
 .snack {
 	display: none;
-	background-color: green;
+	background-color: #E0FFFF;
 }
 
 .meal {
 	display: none;
-	background-color: yellow;
+	background-color: #ddf6dd;
 }
-
-
 
 .remove {
 	display: none;
@@ -95,32 +144,156 @@ nav ul li {
 }
 
 
+
+#social {
+    margin: 0px auto;
+    width: 320px;
+    position: relative;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+	line-height: 20px;
+	margin: 20px auto;
+	border: 5px solid white;
+	padding: 20px;
+}
+
+#social-img {
+    display: inline-block;
+    margin: 10px;
+}
+
+
 /* ++++++++ !MEDIA QUERY TIME! ++++++++ */
 
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
+	nav {
+		padding-left: 5%;
+	}
+
 	.recipe {
 		box-sizing: content-box;
 		display: inline-block;
-		width: 750px;
-		height: 450px;
+		width: 650px;
+		height: 435px;
+	}
+
+	.recipe img {
+		width: 550px;
+		height: 352px;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.recipe p {
+		width: 550px;
+		padding: 10px;
+		margin: 0 auto;
+	}
+
+	.full-recipe {
+		box-sizing: content-box;
+		display: inline-block;
+		width: 650px;
 		margin: 10px 10px 10px 0px;
 		padding: 10px;
+	
+	}
+
+	.full-recipe img {
+		width: 550px;
+		height: 352px;
+		text-align: center;
+		margin-bottom: 5px;px 10px 0px;
+	}
+
+	.full-recipe p {
+		width: 550px;
+	}
+
+ }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+	.recipe {
+		box-sizing: content-box;
+		display: inline-block;
+		width: 800px;
+		height: 500px;
 	}
 
 	.recipe img {
 		width: 750px;
-		height: 350px;
+		height: 416px;
+		display: block;
+		margin: 0 auto;
 		text-align: center;
-		margin-bottom: 5px;
+	}
+
+	.recipe p {
+		width: 750px;
+		padding: 10px;
+		margin: 0 auto;
+	}
+
+ }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+	.recipe {
+		box-sizing: content-box;
+		display: inline-block;
+		width: 500px;
+		height: 400px;
 	}
 
 
+	.recipe img {
+		width: 500px;
+		height: 320px;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.recipe p {
+		width: 500px;
+		padding: 10px;
+		margin: 0 auto;
+	}
+
+	.full-recipe {
+		box-sizing: content-box;
+		display: inline-block;
+		width: 100%;
+		margin: 10px 10px 10px 0px;
+		padding: 10px;
+	}
+
+	.full-recipe-float {
+		box-sizing: content-box;
+		display: inline-block;
+		margin: 10px 10px 10px 0px;
+		padding: 10px;
+		float: left;
+	}
+
+	.full-recipe img {
+		width: 500px;
+		height: 352px;
+		text-align: center;
+		margin-bottom: 5px;px 10px 0px;
+	}
+
+	.full-recipe-float-2 {
+		width: 400px;
+		margin-top: 6%;
+		display: inline-block;
+		float: left;
+	}
 
  }
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+}
