@@ -1,14 +1,8 @@
+function hide(target) {
+	document.getElementById(target).style.display = 'none';
+};
 
-
-/* Changing to work with class! Go! */
 window.onload = function() {
-
-/*	document.getElementById('moreRecipes').addEventListener("click", function() {
-		if ( 
-
-		var subnavShow = document.getElementById('subnav');
-		subnavShow.style.display = 'inline-block';
-	});	*/
  
 	function showHome() {
 		var home = document.getElementById('welcome');
@@ -93,4 +87,4 @@ window.onload = function() {
 		
 	});
 
-}
+};

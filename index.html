@@ -6,6 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="js/script.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script>
+	$( document ).ready(function() {
+	    $("#newsletter").delay(4000).fadeIn(1000);
+	});
+	</script>
 
 </head>
 <body>
@@ -60,7 +67,7 @@
 			<h3>snack: recipe name</h3>
 			<img src="imgs/snack.jpg">
 			 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna.<a href="recipes.html">MAKE IT.</a></p> 
+			tempor incididunt ut labore et dolore magna. <a href="recipes.html">MAKE IT.</a></p> 
 		</div>
 
 
@@ -92,6 +99,12 @@
 			tempor incididunt ut labore et dolore magna. <a href="recipes.html">MAKE IT.</a></p>
 		</div>
 
+				<div id="newsletter">
+			<a href="#" onclick="hide('newsletter')">X</a>
+			<h3>Get recipes in your inbox</h3>
+			<input type="text" name="mail" value="your email">
+			<input type="submit" value="Send">
+		</div>
 
 
 	</div>
