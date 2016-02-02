@@ -24,6 +24,10 @@ nav ul li {
 	padding: 5px 20px 5px 0px;
 }
 
+#subnav {
+	display: none;
+}
+
 .container {
 	width: 90%;
 	margin: 0 auto;
@@ -90,3 +94,33 @@ nav ul li {
 	display: inline-block;
 }
 
+
+/* ++++++++ !MEDIA QUERY TIME! ++++++++ */
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+	.recipe {
+		box-sizing: content-box;
+		display: inline-block;
+		width: 750px;
+		height: 450px;
+		margin: 10px 10px 10px 0px;
+		padding: 10px;
+	}
+
+	.recipe img {
+		width: 750px;
+		height: 350px;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+
+
+
+ }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
