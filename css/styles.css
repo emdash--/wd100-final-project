@@ -67,7 +67,7 @@ nav ul li {
 
 .recipe {
 	box-sizing: content-box;
-	display: inline-block;
+	display: none;
 	width: 280px;
 	height: 300px;
 	background-color: red;
@@ -94,7 +94,7 @@ nav ul li {
 	width: 280px;
 	height: 180px;
 	text-align: center;
-	margin-bottom: 5px;px 10px 0px;
+	margin-bottom: 5px 10px 0px;
 }
 
 .recipe h3 {
@@ -111,18 +111,9 @@ nav ul li {
 	font-weight: bold;
 }
 
-.category {
-	color: gray;
-	display: inline;
-}
-
 .breakfast {
 	background-color: #FFFACD;
 	display: none;
-}
-
-#breakfast {
-	display:none;
 }
 
 .snack {
@@ -135,19 +126,9 @@ nav ul li {
 	background-color: #ddf6dd;
 }
 
-.remove {
-	display: none;
-}
-
 .show {
 	display: inline-block;
 }
-
-
-#newsletter {
-	 z-index: 1;
-}
-
 
 #social {
     margin: 0px auto;
@@ -189,8 +170,6 @@ nav ul li {
     left: 290px;
 }
 
-
-
 /* ++++++++ !MEDIA QUERY TIME! ++++++++ */
 
 
@@ -203,7 +182,7 @@ nav ul li {
 
 	.recipe {
 		box-sizing: content-box;
-		display: inline-block;
+		display: none;
 		width: 650px;
 		height: 435px;
 	}
@@ -248,7 +227,7 @@ nav ul li {
 
 	.recipe {
 		box-sizing: content-box;
-		display: inline-block;
+		display: none;
 		width: 800px;
 		height: 500px;
 	}
@@ -273,7 +252,7 @@ nav ul li {
 
 	.recipe {
 		box-sizing: content-box;
-		display: inline-block;
+		display: none;
 		width: 500px;
 		height: 400px;
 	}

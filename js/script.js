@@ -42,18 +42,7 @@ window.onload = function() {
 		};
 	};
 
-
-
-/*	function allRecipes () {
-		var allRecipesGet = document.getElementsByClassName('recipes');
-		for ( var i = 0; i < allRecipesGet.length; i++ ) {
-				allRecipesGet[i].style.display = 'inline-block';
-		};
-	};*/
-
-
-	// Menu Link //
-
+/* Event listeners */
 	document.getElementById('home').addEventListener("click", function() {
 		hideSections();
 		showHome();
